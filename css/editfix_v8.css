@@ -1,0 +1,13 @@
+#ccm-theme-grid-edit-mode-row-wrapper {
+    display: flex;
+}
+.ccm-layouts-edit-mode-add .sm\:flex, .ccm-layouts-edit-mode-edit .sm\:flex,
+.ccm-layouts-edit-mode-add .md\:flex, .ccm-layouts-edit-mode-edit .md\:flex,
+.ccm-layouts-edit-mode-add .lg\:flex, .ccm-layouts-edit-mode-edit .lg\:flex,
+.ccm-layouts-edit-mode-add .xl\:flex, .ccm-layouts-edit-mode-edit .xl\:flex,
+.ccm-layouts-edit-mode-add .flex, .ccm-layouts-edit-mode-edit .flex {
+    display: block;
+}
+.ccm-ui img {
+    display: inline;
+}
