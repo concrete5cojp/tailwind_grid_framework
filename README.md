@@ -15,20 +15,23 @@ How to Support Tailwindcss Grid Framework in your theme (`page_theme.php`)
 namespace Application\Theme\YourTheme;
 
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
+use Concrete\Core\Page\Theme\Theme;
 
-class PageTheme extends \Concrete\Theme\Elemental\PageTheme implements ThemeProviderInterface
+class PageTheme extends Theme implements ThemeProviderInterface
 {
     protected $pThemeGridFrameworkHandle = 'tailwindcss_flexbox';
 
     public function registerAssets()
     {
-        parent::registerAssets();
-
         $this->requireAsset('tailwindcss1');
         // $this->providesAsset('css', 'tailwindcss1'); // If your theme already loaded tailwindcss, remove this comment out.
     }
 
-}
+    public function getThemeName()
+    {
+        return t('Your Theme');
+    }
+...
 ```
 
 ## References
