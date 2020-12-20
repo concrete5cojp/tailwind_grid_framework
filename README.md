@@ -8,7 +8,7 @@ concrete5 before version 9 can't treat css grid. This package is built for versi
 
 ## Usage
 
-How to Support Tailwindcss Grid Gramework in your theme (`page_theme.php`)
+How to Support Tailwindcss Grid Framework in your theme (`page_theme.php`)
 
 ```php
 <?php
