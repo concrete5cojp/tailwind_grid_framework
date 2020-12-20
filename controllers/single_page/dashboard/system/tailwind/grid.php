@@ -15,6 +15,7 @@ class Grid extends DashboardPageController
             $this->set('rowClass', $config->get('classes.row', TailwindcssFlexbox::DEFAULT_CLASS_ROW));
             $this->set('columnClass', $config->get('classes.column', TailwindcssFlexbox::DEFAULT_CLASS_COLUMN));
         }
+        $this->set('pageTitle', t('Tailwindcss Grid Framework'));
     }
 
     public function save()
