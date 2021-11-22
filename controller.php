@@ -72,7 +72,7 @@ class Controller extends Package
         $dispatcher->addListener('on_before_render', function ($event) use ($app) {
             /** @var GenericEvent $event */
             $page = Page::getCurrentPage();
-            if ($page->isEditMode()) {
+            if ($page && $page->isEditMode()) {
                 /** @var View $view */
                 $view = $event->getArgument('view');
                 $view->requireAsset('css', 'tailwindcss_editfix_v8');
